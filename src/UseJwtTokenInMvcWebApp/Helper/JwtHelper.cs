@@ -40,7 +40,9 @@ namespace UseJwtTokenInMvcWebApp.Helper
             _claim = new Claim(ClaimTypes.Name, user.UserName);
             claims.Add(_claim);
 
-            _claim = new Claim(ClaimTypes.Role, "Admin");
+            string role = user.isAdmin ? Roles.Admin.ToString() : Roles.User.ToString();
+
+            _claim = new Claim(ClaimTypes.Role, role);
             claims.Add(_claim);
 
             return claims.AsEnumerable();
