@@ -1,2 +1,2 @@
-# aspnetcore-mvc-jwt-auth
-imlement jwt token through  cookie in asp.net core mvc web app
+# aspnetcore mvc auth with jwt token
+implement jwt token through  cookie in asp.net core mvc web app
